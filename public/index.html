@@ -1,12 +1,24 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="socket.io/socket.io.js"></script>
-    <script src="/js/index.js"></script>
-    <title>chat room</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>نرم افزار چت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-    <h3>the chat room is run ...</h3>
+    <h3>نرم افزار چت فعال است.</h3>
+
+    <ol id="messages"></ol>
+
+    <form id="message-form">
+        <input name="message" type="text" placeholder="Message" />
+        <button type="submit">send</button>
+    </form>
+
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
