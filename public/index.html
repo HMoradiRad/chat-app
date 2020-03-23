@@ -3,32 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>نرم افزار چت</title>
+    <title>ورود کاربران</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="chat">
-    <div class="chat__sidebar">
-        <h3>peple</h3>
-        <div id="users"></div>
+<body class="centered-form" dir="rtl">
+
+    <div class="centered-form__form">
+        <form action="chat.html">
+            <div class="form-field">
+                <h3>ورود به چت روم</h3>
+            </div>
+            <div class="form-field">
+                <label>نام شما</label>
+                <input type="text" name="name" autofocus />
+            </div>
+            <div class="form-field">
+                <label>اتاق</label>
+                <input type="text" name="room" />
+            </div>
+            <div class="form-field">
+                <button>ورود</button>
+            </div>
+        </form>
     </div>
-    <div class="chatt__main">
-        <ol id="messages" class="chat__messages"></ol>
-        <div class="chat__footer">
-            <form id="message-form">
-                <input name="message" type="text" placeholder="Message" />
-                <button type="submit">send</button>
-            </form>
-        </div>
-    </div>
-    <h3>نرم افزار چت فعال است.</h3>
-
-    
-
-    
-
-    <script src="/js/lib/jquery-3.3.1.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/index.js"></script>
 </body>
 </html>
